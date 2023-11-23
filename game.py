@@ -23,7 +23,7 @@ def start_game(event):
         file1.close()
         score.configure(text="Score: 00\n\nHighscore: " + highscore)
         canvas.delete("all")
-        BALL_COLOR = ["red", "yellow", "green"]
+        BALL_COLOR = ["red", "blue", "green"]
         BRICK_COLOR = ["PeachPuff3", "dark slate gray", "rosy brown", "light goldenrod yellow", "turquoise3", "salmon",
                        "light steel blue", "dark khaki", "pale violet red", "orchid", "tan", "MistyRose2",
                        "DodgerBlue4", "wheat2", "RosyBrown2", "bisque3", "DarkSeaGreen1"]
@@ -39,7 +39,7 @@ def start_game(event):
                 b.append(tmp)
             bricks.append(b)
 
-        for i in range(0, 5):
+        for i in range(0, 19):
             for j in range(0, 19):
                 canvas.move(bricks[i][j].id, 25 * j, 25 * i)
 
